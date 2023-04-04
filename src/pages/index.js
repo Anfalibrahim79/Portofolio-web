@@ -20,47 +20,47 @@ export default function Home() {
     {
       id: 0,
       name: "HTML",
-      images : HTML
+      imageUrl : HTML
     },
     {
       id: 1,
       name: "CSS",
-      images : CSS
+      imageUrl : CSS
     },
     {
       id: 2,
       name: "JavaScript",
-      images : JS
+      imageUrl : JS
     }, {
       id: 3,
       name: "Bootstrap",
-      images : Bootstrap
+      imageUrl : Bootstrap
     }, {
       id: 4,
       name: "Tailwind",
-      images : Tailwind
+      imageUrl : Tailwind
     },
     {
       id: 5,
       name: "ReactJS",
-      images : ReactJS
+      imageUrl : ReactJS
     }, {
       id: 6,
       name: "NodeJS",
-      images : NodeJS
+      imageUrl : NodeJS
 
     }, {
       id: 7,
       name: "ExpressJS",
-      images : Express
+      imageUrl : Express
     }, {
       id: 8,
       name: "MySql",
-      images : MySql
+      imageUrl : MySql
     }, {
       id: 9,
       name: "MongoDb",
-      images : MongoDb
+      imageUrl : MongoDb
     }
   ]
 
@@ -139,6 +139,15 @@ export default function Home() {
               My Knowledge
             </h3>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 items-center '>
+              <div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={HTML} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">html</h2>
+                  </div>
+
+                </div>
+              </div>
               {
                 knowledge.map((el) => {
                   return (
