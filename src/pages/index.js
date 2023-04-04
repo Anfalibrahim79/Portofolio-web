@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from "react-icons/ai"
 import Image from 'next/image'
 import Avatar from '../public/avatar.png'
-import Cards from './components/Cards'
+// import Cards from './components/Cards'
 import HTML from '../public/html.svg'
 import CSS from '../public/css.svg'
 import JS from '../public/js.svg'
@@ -16,53 +16,53 @@ import MySql from '../public/mysql.svg'
 import MongoDb from '../public/mongodb.svg'
 
 export default function Home() {
-  const knowledge = [
-    {
-      id: 0,
-      name: "HTML",
-      imageUrl : HTML
-    },
-    {
-      id: 1,
-      name: "CSS",
-      imageUrl : CSS
-    },
-    {
-      id: 2,
-      name: "JavaScript",
-      imageUrl : JS
-    }, {
-      id: 3,
-      name: "Bootstrap",
-      imageUrl : Bootstrap
-    }, {
-      id: 4,
-      name: "Tailwind",
-      imageUrl : Tailwind
-    },
-    {
-      id: 5,
-      name: "ReactJS",
-      imageUrl : ReactJS
-    }, {
-      id: 6,
-      name: "NodeJS",
-      imageUrl : NodeJS
+  // const knowledge = [
+  //   {
+  //     id: 0,
+  //     name: "HTML",
+  //     imageUrl: HTML
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "CSS",
+  //     imageUrl: CSS
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "JavaScript",
+  //     imageUrl: JS
+  //   }, {
+  //     id: 3,
+  //     name: "Bootstrap",
+  //     imageUrl: Bootstrap
+  //   }, {
+  //     id: 4,
+  //     name: "Tailwind",
+  //     imageUrl: Tailwind
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "ReactJS",
+  //     imageUrl: ReactJS
+  //   }, {
+  //     id: 6,
+  //     name: "NodeJS",
+  //     imageUrl: NodeJS
 
-    }, {
-      id: 7,
-      name: "ExpressJS",
-      imageUrl : Express
-    }, {
-      id: 8,
-      name: "MySql",
-      imageUrl : MySql
-    }, {
-      id: 9,
-      name: "MongoDb",
-      imageUrl : MongoDb
-    }
-  ]
+  //   }, {
+  //     id: 7,
+  //     name: "ExpressJS",
+  //     imageUrl: Express
+  //   }, {
+  //     id: 8,
+  //     name: "MySql",
+  //     imageUrl: MySql
+  //   }, {
+  //     id: 9,
+  //     name: "MongoDb",
+  //     imageUrl: MongoDb
+  //   }
+  // ]
 
   return (
     <>
@@ -102,13 +102,13 @@ export default function Home() {
               </div>
               <div className='text-5xl flex justify-center gap-8 text-slate-600 py-3'>
                 <a href='#' className='cursor-pointer'>
-                <AiFillGithub />
+                  <AiFillGithub />
                 </a>
                 <a href='#' className='cursor-pointer'>
-                <AiFillLinkedin />
+                  <AiFillLinkedin />
                 </a>
                 <a href='#' className='cursor-pointer'>
-                <AiFillTwitterCircle />
+                  <AiFillTwitterCircle />
                 </a>
               </div>
             </section>
@@ -127,9 +127,9 @@ export default function Home() {
                 </p>
               </div>
             </section>
-              <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mx-auto overflow-hidden'>
-                <Image src={Avatar} alt='avatar' layout='fill' priority objectFit='cover' />
-              </div>
+            <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mx-auto overflow-hidden'>
+              <Image src={Avatar} alt='avatar' layout='fill' priority objectFit='cover' />
+            </div>
             {/*end*/}
 
           </div>
@@ -139,8 +139,8 @@ export default function Home() {
               My Knowledge
             </h3>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 items-center '>
-              
-              {
+
+              {/* {
                 knowledge.map((el) => {
                   return (
                     <div key={el.id}>
@@ -148,7 +148,88 @@ export default function Home() {
                     </div>
                   )
                 })
-              }
+              } */}
+              <div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={HTML} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">HTML</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={CSS} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">CSS</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={JS} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">JavaScript</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={Bootstrap} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">Bootstrap</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={Tailwind} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">Tailwind</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={ReactJS} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">ReactJS</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={NodeJS} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">NodeJS</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={Express} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">ExpressJS</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={MySql} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">MySql</h2>
+                  </div>
+
+                </div>
+              </div><div className="card card-compact glass shadow-xl text-center cursor-pointer">
+                <div className='flex flex-col items-center'>
+                  <Image src={MongoDb} className='w-56 p-4' alt="language" />
+                  <div className="card-body">
+                    <h2 className="card-title">MongoDb</h2>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </section>
           {/*end*/}
