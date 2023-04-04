@@ -20,47 +20,47 @@ export default function Home() {
     {
       id: 0,
       name: "HTML",
-      image: HTML
+      images : HTML
     },
     {
       id: 1,
       name: "CSS",
-      image: CSS
+      images : CSS
     },
     {
       id: 2,
       name: "JavaScript",
-      image: JS
+      images : JS
     }, {
       id: 3,
       name: "Bootstrap",
-      image: Bootstrap
+      images : Bootstrap
     }, {
       id: 4,
       name: "Tailwind",
-      image: Tailwind
+      images : Tailwind
     },
     {
       id: 5,
       name: "ReactJS",
-      image: ReactJS
+      images : ReactJS
     }, {
       id: 6,
       name: "NodeJS",
-      image: NodeJS
+      images : NodeJS
 
     }, {
       id: 7,
       name: "ExpressJS",
-      image: Express
+      images : Express
     }, {
       id: 8,
       name: "MySql",
-      image: MySql
+      images : MySql
     }, {
       id: 9,
       name: "MongoDb",
-      image: MongoDb
+      images : MongoDb
     }
   ]
 
@@ -72,8 +72,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white'>
-        <nav className='py-10 px-10 mb-12 flex justify-between items-center sticky z-10 w-full shadow-lg '>
+      <main className='bg-white relative'>
+        <nav className='py-10 px-10 mb-12 flex justify-between items-center w-full shadow-lg '>
           <h1 className='text-xl font-sunny'>
             Anfal Ibrahim | Web Dev
           </h1>
@@ -128,7 +128,7 @@ export default function Home() {
               </div>
             </section>
               <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mx-auto overflow-hidden'>
-                <Image src={Avatar} alt='avatar' layout='fill' objectFit='cover' />
+                <Image src={Avatar} alt='avatar' layout='fill' priority objectFit='cover' />
               </div>
             {/*end*/}
 
