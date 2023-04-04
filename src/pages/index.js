@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from "react-icons/ai"
 import Image from 'next/image'
 import Avatar from '../public/avatar.png'
-import Cards from './components/Cards'
+import Cards from '../components/Cards'
 import HTML from '../public/html.svg'
 import CSS from '../public/css.svg'
 import JS from '../public/js.svg'
