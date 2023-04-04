@@ -148,7 +148,7 @@ export default function Home() {
 
                 </div>
               </div>
-              {
+              {/* {
                 knowledge.map((el) => {
                   return (
                     <div key={el.id}>
@@ -156,7 +156,7 @@ export default function Home() {
                     </div>
                   )
                 })
-              }
+              } */}
             </div>
           </section>
           {/*end*/}
