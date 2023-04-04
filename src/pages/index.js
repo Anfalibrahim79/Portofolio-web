@@ -139,16 +139,8 @@ export default function Home() {
               My Knowledge
             </h3>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 items-center '>
-              <div className="card card-compact glass shadow-xl text-center cursor-pointer">
-                <div className='flex flex-col items-center'>
-                  <Image src={HTML} className='w-56 p-4' alt="language" />
-                  <div className="card-body">
-                    <h2 className="card-title">html</h2>
-                  </div>
-
-                </div>
-              </div>
-              {/* {
+              
+              {
                 knowledge.map((el) => {
                   return (
                     <div key={el.id}>
@@ -156,7 +148,7 @@ export default function Home() {
                     </div>
                   )
                 })
-              } */}
+              }
             </div>
           </section>
           {/*end*/}
