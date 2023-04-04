@@ -16,53 +16,53 @@ import MySql from '../public/mysql.svg'
 import MongoDb from '../public/mongodb.svg'
 
 export default function Home() {
-  // const knowledge = [
-  //   {
-  //     id: 0,
-  //     name: "HTML",
-  //     imageUrl: HTML
-  //   },
-  //   {
-  //     id: 1,
-  //     name: "CSS",
-  //     imageUrl: CSS
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "JavaScript",
-  //     imageUrl: JS
-  //   }, {
-  //     id: 3,
-  //     name: "Bootstrap",
-  //     imageUrl: Bootstrap
-  //   }, {
-  //     id: 4,
-  //     name: "Tailwind",
-  //     imageUrl: Tailwind
-  //   },
-  //   {
-  //     id: 5,
-  //     name: "ReactJS",
-  //     imageUrl: ReactJS
-  //   }, {
-  //     id: 6,
-  //     name: "NodeJS",
-  //     imageUrl: NodeJS
+  const knowledge = [
+    {
+      id: 0,
+      name: "HTML",
+      imageUrl: HTML
+    },
+    {
+      id: 1,
+      name: "CSS",
+      imageUrl: CSS
+    },
+    {
+      id: 2,
+      name: "JavaScript",
+      imageUrl: JS
+    }, {
+      id: 3,
+      name: "Bootstrap",
+      imageUrl: Bootstrap
+    }, {
+      id: 4,
+      name: "Tailwind",
+      imageUrl: Tailwind
+    },
+    {
+      id: 5,
+      name: "ReactJS",
+      imageUrl: ReactJS
+    }, {
+      id: 6,
+      name: "NodeJS",
+      imageUrl: NodeJS
 
-  //   }, {
-  //     id: 7,
-  //     name: "ExpressJS",
-  //     imageUrl: Express
-  //   }, {
-  //     id: 8,
-  //     name: "MySql",
-  //     imageUrl: MySql
-  //   }, {
-  //     id: 9,
-  //     name: "MongoDb",
-  //     imageUrl: MongoDb
-  //   }
-  // ]
+    }, {
+      id: 7,
+      name: "ExpressJS",
+      imageUrl: Express
+    }, {
+      id: 8,
+      name: "MySql",
+      imageUrl: MySql
+    }, {
+      id: 9,
+      name: "MongoDb",
+      imageUrl: MongoDb
+    }
+  ]
 
   return (
     <>
