@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from "react-icons/ai"
 import Image from 'next/image'
 import Avatar from '../public/avatar.png'
-// import Cards from './components/Cards'
+import Cards from './components/Cards'
 import HTML from '../public/html.svg'
 import CSS from '../public/css.svg'
 import JS from '../public/js.svg'
@@ -140,7 +140,7 @@ export default function Home() {
             </h3>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 items-center '>
 
-              {/* {
+              {
                 knowledge.map((el) => {
                   return (
                     <div key={el.id}>
@@ -148,8 +148,8 @@ export default function Home() {
                     </div>
                   )
                 })
-              } */}
-              <div className="card card-compact glass shadow-xl text-center cursor-pointer">
+              }
+              {/* <div className="card card-compact glass shadow-xl text-center cursor-pointer">
                 <div className='flex flex-col items-center'>
                   <Image src={HTML} className='w-56 p-4' alt="language" />
                   <div className="card-body">
@@ -229,7 +229,7 @@ export default function Home() {
                   </div>
 
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
           {/*end*/}
