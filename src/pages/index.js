@@ -79,7 +79,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='bg-white dark:bg-gray-500 ' data-theme={darkMode ? "night" : "retro"}>
-        <nav className='py-10 px-10 mb-12 flex justify-between items-center w-full shadow-lg '>
+        <nav className='py-10 md:py-5 px-10 mb-12 flex justify-between items-center w-full shadow-lg '>
           <h1 className='text-xl font-sunny'>
             Anfal Ibrahim | Web Dev
           </h1>
@@ -92,7 +92,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <section className='px-6 md:py-10'>
+        <section className='px-6 '>
           <div className='flex flex-col md:flex-row' >
             {/*Hero Section */}
             <section className='min-h-max '>
