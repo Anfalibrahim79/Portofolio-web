@@ -16,7 +16,11 @@ import MySql from '../public/mysql.svg'
 import MongoDb from '../public/mongodb.svg'
 import { useState } from 'react'
 
+
+
+
 export default function Home() {
+  
   const knowledge = [
     {
       id: 0,
@@ -148,7 +152,7 @@ export default function Home() {
               {
                 knowledge.map((el) => {
                   return (
-                    <div key={el.id}>
+                    <div data-aos="fade-up" key={el.id}>
                       <Cards data={el} />
                     </div>
                   )
